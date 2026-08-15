@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="journal.html">Weekly Journal</a></li>
+            <li><a href="ai-log.html">AI Engineering Log</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header>
+            <h1 id="greeting">Welcome to My Portfolio</h1>
+            <p id="current-date"></p>
+        </header>
+
+        <section class="profile-card">
+            <h2>About Me</h2>
+            <p><strong>Name:</strong> [Your Name]</p>
+            <p><strong>Grade Level:</strong> [Your Grade Level]</p>
+            <p><strong>Programming Experience:</strong> [e.g., Beginner / Some Python experience / First time coding]</p>
+            <p><strong>Why I Enrolled:</strong> [Add a brief sentence on why you joined the course]</p>
+        </section>
+
+        <section class="goals-card">
+            <h2>Semester Goals</h2>
+            <ol>
+                <li>Master HTML, CSS, and basic JavaScript.</li>
+                <li>Build a set of functional web projects for my portfolio.</li>
+                <li>Learn how to effectively use AI tools to improve my coding skills.</li>
+            </ol>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
