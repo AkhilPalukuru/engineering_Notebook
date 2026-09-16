@@ -1,37 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Developer Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Developer Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="light-theme">
 
-<nav class="navbar">
-    <ul>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Akhil<span>.</span></a>
+      <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="journal.html">Weekly Journal</a></li>
-        <li><a href="ai-log.html">AI Engineering Log</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="about.html">About Me</a></li>
-    </ul>
-</nav>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="ai-log.html">AI Log</a></li>
+        <li><a href="projects.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<main class="container">
-    <header class="hero">
-        <h1>Projects</h1>
-    </header>
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <span class="section-label">Selected Work</span>
+    <h1 class="hero-name">My Projects</h1>
+    <p class="hero-subtitle">Filter by technology or click on a project card for detailed information.</p>
+  </header>
 
-    <section class="card">
-        <h2>Project</h2>
-        <p><strong>Date Completed:</strong> Week 1</p>
-        <p><strong>Technologies Used:</strong> HTML, CSS, GitHub</p>
-        <p><strong>Description:</strong> A multi page portfolio and notebook built to show my code, weekly journals, and AI logs in the course.</p>
-        <a href="https://github.com" target="_blank" class="btn">View GitHub Repository</a>
+  <!-- Marquee Banner -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span>JavaScript</span> &bull; <span>Java</span> &bull; <span>Web Development</span> &bull; <span>REST APIs</span> &bull; <span>OOP</span> &bull; <span>HTML5 / CSS3</span> &bull;
+      <span>JavaScript</span> &bull; <span>Java</span> &bull; <span>Web Development</span> &bull; <span>REST APIs</span> &bull; <span>OOP</span> &bull; <span>HTML5 / CSS3</span> &bull;
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- Filter Buttons Section -->
+    <section class="bento-section">
+      <div class="filter-buttons" style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px;">
+        <button class="filter-btn btn active" data-filter="all">All</button>
+        <button class="filter-btn btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn btn" data-filter="java">Java</button>
+        <button class="filter-btn btn" data-filter="web">Web</button>
+        <button class="filter-btn btn" data-filter="other">Other</button>
+      </div>
+
+      <!-- Projects Grid (Bento Architecture) -->
+      <div class="projects-grid bento-grid">
+        
+        <!-- Project 1 -->
+        <article class="project-card bento-card bento-wide" data-category="javascript web">
+          <div class="card-content">
+            <h3>Interactive Task Tracker</h3>
+            <p class="project-desc">A browser-based task management web app with local storage persistence.</p>
+            <div class="tech-tags" style="margin-top: 12px; margin-bottom: 16px;">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+            </div>
+            <button class="btn btn-secondary open-modal-btn" 
+                    data-title="Interactive Task Tracker"
+                    data-desc="A dynamic application designed to manage daily tasks, complete with drag-and-drop capability and custom category filtering."
+                    data-learned="Learned state management using browser localStorage, event delegation, and accessible DOM manipulation."
+                    data-github="https://github.com"
+                    data-live="https://example.com">
+              Learn More
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card bento-card" data-category="java other">
+          <div class="card-content">
+            <h3>Student Record Management System</h3>
+            <p class="project-desc">A Java console and object-oriented application to handle student database records.</p>
+            <div class="tech-tags" style="margin-top: 12px; margin-bottom: 16px;">
+              <span class="tag">Java</span>
+              <span class="tag">OOP</span>
+            </div>
+            <button class="btn btn-secondary open-modal-btn" 
+                    data-title="Student Record Management System"
+                    data-desc="Command-line application that allows administrators to add, update, search, and delete student data."
+                    data-learned="Deepened understanding of Java Collections, Object-Oriented Design Principles (OOP), and file I/O handling."
+                    data-github="https://github.com"
+                    data-live="#">
+              Learn More
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card bento-card" data-category="javascript web">
+          <div class="card-content">
+            <h3>Weather Dashboard</h3>
+            <p class="project-desc">Real-time weather application fetching data via public REST APIs.</p>
+            <div class="tech-tags" style="margin-top: 12px; margin-bottom: 16px;">
+              <span class="tag">JavaScript</span>
+              <span class="tag">REST API</span>
+              <span class="tag">Web</span>
+            </div>
+            <button class="btn btn-secondary open-modal-btn" 
+                    data-title="Weather Dashboard"
+                    data-desc="Fetches global weather forecasts using asynchronous JavaScript requests to OpenWeatherMap API."
+                    data-learned="Mastered JavaScript Fetch API, Async/Await asynchronous handling, and JSON parsing."
+                    data-github="https://github.com"
+                    data-live="https://example.com">
+              Learn More
+            </button>
+          </div>
+        </article>
+
+      </div>
     </section>
-</main>
+  </main>
 
-<script src="js/script.js"></script>
+  <!-- Interactive Project Modal -->
+  <div id="project-modal" class="modal" aria-hidden="true" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; display: none; align-items: center; justify-content: center; z-index: 1000;">
+    <div class="modal-overlay" tabindex="-1" data-close style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(11, 15, 25, 0.8); backdrop-filter: blur(8px);"></div>
+    <div class="modal-container bento-card" role="dialog" aria-modal="true" style="position: relative; z-index: 1001; max-width: 500px; width: 90%; background: #131C2E; border: 1px solid #1E293B; border-radius: 20px; padding: 30px;">
+      <button class="modal-close" data-close style="position: absolute; top: 15px; right: 20px; background: none; border: none; color: #94A3B8; font-size: 1.8rem; cursor: pointer;">&times;</button>
+      <h2 id="modal-title" style="margin-top: 0; margin-bottom: 10px;">Project Title</h2>
+      <p id="modal-desc" style="margin-bottom: 20px;">Project Description</p>
+      <div class="modal-section" style="margin-bottom: 20px;">
+        <h4 style="color: #60A5FA; margin-bottom: 6px;">What I Learned:</h4>
+        <p id="modal-learned">Key takeaways...</p>
+      </div>
+      <div class="modal-links" style="display: flex; gap: 12px; margin-top: 10px;">
+        <a id="modal-github" href="#" target="_blank" class="btn">GitHub Code</a>
+        <a id="modal-live" href="#" target="_blank" class="btn btn-secondary">Live Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:example@email.com">Email</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Akhil. Built for Portfolio 2.0.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

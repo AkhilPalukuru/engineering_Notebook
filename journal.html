@@ -6,34 +6,90 @@
     <title>Weekly Journal - Developer Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="light-theme">
 
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation Bar -->
 <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="journal.html" class="active">Weekly Journal</a></li>
-        <li><a href="ai-log.html">AI Engineering Log</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About Me</a></li>
-    </ul>
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">Akhil<span>.</span></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="journal.html" class="active">Weekly Journal</a></li>
+            <li><a href="ai-log.html">AI Engineering Log</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </div>
 </nav>
 
-<main class="container">
-    <header class="hero">
-        <h1>Weekly Journal</h1>
-    </header>
+<!-- Hero Section -->
+<header class="hero-section">
+    <span class="section-label">Developer Log</span>
+    <h1 class="hero-name">Weekly Journal</h1>
+    <p class="hero-subtitle">Reflections and progress updates throughout the course</p>
+</header>
 
-    <section class="card">
-        <h2>Week 1 Entry</h2>
-        <ul class="styled-list">
-            <li><strong>Goals:</strong> Build a website which meets all the requirements for the project.</li>
-            <li><strong>Accomplishments:</strong> Created all core pages, added profile, a public GitHub repository.</li>
-            <li><strong>Biggest Challenge:</strong> Getting the image to add to the code, I still can't add it to the code.</li>
-            <li><strong>What I Learned:</strong> I revised about what I knew in HTML, more ways to do CSS and navigation bar..</li>
-            <li><strong>Goals for Next Week:</strong> Make the website look way better, with more CSS styles.</li>
-        </ul>
+<!-- Marquee Banner -->
+<div class="marquee-container">
+    <div class="marquee-content">
+        <span>Weekly Updates</span> &bull; <span>Reflections</span> &bull; <span>Engineering Log</span> &bull; <span>Learning Outcomes</span> &bull;
+        <span>Weekly Updates</span> &bull; <span>Reflections</span> &bull; <span>Engineering Log</span> &bull; <span>Learning Outcomes</span> &bull;
+    </div>
+</div>
+
+<main class="container">
+    <!-- Journal Entries Section -->
+    <section class="bento-section">
+        <div class="bento-grid" style="grid-template-columns: 1fr;">
+            
+            <article class="bento-card bento-wide">
+                <span class="section-label">LOG ENTRY #01</span>
+                <h2 style="font-size: 1.5rem; margin-top: 8px; margin-bottom: 20px;">Week 1 Entry</h2>
+                
+                <ul class="styled-list" style="list-style: none; display: flex; flex-direction: column; gap: 14px; padding: 0;">
+                    <li style="border-bottom: 1px solid #1E293B; padding-bottom: 10px;">
+                        <strong style="color: #60A5FA;">Goals:</strong> 
+                        <span>Build a website which meets all the requirements for the project.</span>
+                    </li>
+                    <li style="border-bottom: 1px solid #1E293B; padding-bottom: 10px;">
+                        <strong style="color: #60A5FA;">Accomplishments:</strong> 
+                        <span>Created all core pages, added profile, a public GitHub repository.</span>
+                    </li>
+                    <li style="border-bottom: 1px solid #1E293B; padding-bottom: 10px;">
+                        <strong style="color: #60A5FA;">Biggest Challenge:</strong> 
+                        <span>Getting the image to add to the code, I still can't add it to the code.</span>
+                    </li>
+                    <li style="border-bottom: 1px solid #1E293B; padding-bottom: 10px;">
+                        <strong style="color: #60A5FA;">What I Learned:</strong> 
+                        <span>I revised about what I knew in HTML, more ways to do CSS and navigation bar..</span>
+                    </li>
+                    <li style="padding-bottom: 4px;">
+                        <strong style="color: #60A5FA;">Goals for Next Week:</strong> 
+                        <span>Make the website look way better, with more CSS styles.</span>
+                    </li>
+                </ul>
+
+                <div style="margin-top: 20px;">
+                    <span class="tag">Week 01</span>
+                </div>
+            </article>
+
+        </div>
     </section>
 </main>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:example@email.com">Email</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Akhil Palukuru. All rights reserved.</p>
+</footer>
 
 <script src="js/script.js"></script>
 </body>

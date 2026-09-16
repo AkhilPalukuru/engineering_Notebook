@@ -6,58 +6,99 @@
     <title>AI Engineering Log - Developer Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="light-theme">
 
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation Bar -->
 <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="journal.html">Weekly Journal</a></li>
-        <li><a href="ai-log.html" class="active">AI Engineering Log</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About Me</a></li>
-    </ul>
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">Akhil<span>.</span></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="journal.html">Weekly Journal</a></li>
+            <li><a href="ai-log.html" class="active">AI Engineering Log</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </div>
 </nav>
 
+<!-- Hero Section -->
+<header class="hero-section">
+    <span class="section-label">AI Collaborations</span>
+    <h1 class="hero-name">AI Engineering Log</h1>
+    <p class="hero-subtitle">Documenting prompts, AI recommendations, and implementation takeaways</p>
+</header>
+
+<!-- Marquee Banner -->
+<div class="marquee-container">
+    <div class="marquee-content">
+        <span>Prompt Engineering</span> &bull; <span>AI Assistance</span> &bull; <span>CSS Styling</span> &bull; <span>Code Analysis</span> &bull;
+        <span>Prompt Engineering</span> &bull; <span>AI Assistance</span> &bull; <span>CSS Styling</span> &bull; <span>Code Analysis</span> &bull;
+    </div>
+</div>
+
 <main class="container">
-    <header class="hero">
-        <h1>AI Engineering Log</h1>
-    </header>
+    <!-- AI Log Section -->
+    <section class="bento-section">
+        <div class="bento-grid" style="grid-template-columns: 1fr;">
+            
+            <article class="bento-card bento-wide">
+                <span class="section-label">LOG ENTRY #01</span>
+                <h2 style="font-size: 1.5rem; margin-top: 8px; margin-bottom: 24px;">Entry 1: Image Formatting & Path Linkage</h2>
 
-    <section class="card">
-        <h2>Entry 1: Image Formatting & Path Linkage</h2>
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div class="log-item" style="border-bottom: 1px solid #1E293B; padding-bottom: 12px;">
+                        <h3 style="color: #60A5FA; font-size: 1.1rem; margin-bottom: 4px;">Goal</h3>
+                        <p>Display a personal profile image inside an HTML card section.</p>
+                    </div>
 
+                    <div class="log-item" style="border-bottom: 1px solid #1E293B; padding-bottom: 12px;">
+                        <h3 style="color: #60A5FA; font-size: 1.1rem; margin-bottom: 4px;">Prompt Summary</h3>
+                        <p>I asked it to help me with the coloring of CSS and some formatting in CSS. I also asked it a way to add my github link to the code, and it gave me a way.</p>
+                    </div>
 
-        <div class="log-item">
-            <h3>Goal</h3>
-            <p>Display a personal profile image inside an HTML card section.</p>
-        </div>
+                    <div class="log-item" style="border-bottom: 1px solid #1E293B; padding-bottom: 12px;">
+                        <h3 style="color: #60A5FA; font-size: 1.1rem; margin-bottom: 4px;">AI Recommendation</h3>
+                        <p> It reccomended me a way to add a box behind the texts so it looks more appealing, and line below the titles.</p>
+                    </div>
 
-        <div class="log-item">
-            <h3>Prompt Summary</h3>
-            <p>I asked it to help me with the coloring of CSS and some formatting in CSS. I also asked it a way to add my github link to the code, and it gave me a way.</p>
-        </div>
+                    <div class="log-item" style="border-bottom: 1px solid #1E293B; padding-bottom: 12px;">
+                        <h3 style="color: #60A5FA; font-size: 1.1rem; margin-bottom: 4px;">What I Actually Did</h3>
+                        <p>I did exactly what it told me to, I learned how to add the box and then applied it to the code, and made some lines. I also added a link to my project.</p>
+                    </div>
 
-        <div class="log-item">
-            <h3>AI Recommendation</h3>
-            <p> It reccomended me a way to add a box behind the texts so it looks more appealing, and line below the titles.</p>
-        </div>
+                    <div class="log-item" style="border-bottom: 1px solid #1E293B; padding-bottom: 12px;">
+                        <h3 style="color: #60A5FA; font-size: 1.1rem; margin-bottom: 4px;">Was the AI Correct?</h3>
+                        <p>Yes, AI was correct about it. The link in which it helped me with worked.</p>
+                    </div>
 
-        <div class="log-item">
-            <h3>What I Actually Did</h3>
-            <p>I did exactly what it told me to, I learned how to add the box and then applied it to the code, and made some lines. I also added a link to my project.</p>
-        </div>
+                    <div class="log-item" style="padding-bottom: 4px;">
+                        <h3 style="color: #60A5FA; font-size: 1.1rem; margin-bottom: 4px;">What I Learned</h3>
+                        <p>I learned how to do more styling in CSS overall and how to add links to my code.</p>
+                    </div>
+                </div>
 
-        <div class="log-item">
-            <h3>Was the AI Correct?</h3>
-            <p>Yes, AI was correct about it. The link in which it helped me with worked.</p>
-        </div>
+                <div style="margin-top: 24px;">
+                    <span class="tag">AI Collaboration</span>
+                </div>
+            </article>
 
-        <div class="log-item">
-            <h3>What I Learned</h3>
-            <p>I learned how to do more styling in CSS overall and how to add links to my code.</p>
         </div>
     </section>
 </main>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:example@email.com">Email</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Akhil Palukuru. All rights reserved.</p>
+</footer>
 
 <script src="js/script.js"></script>
 </body>

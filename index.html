@@ -6,46 +6,177 @@
     <title>Developer Portfolio - Home</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="dark-theme">
 
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation Bar -->
 <nav class="navbar">
-    <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="journal.html">Weekly Journal</a></li>
-        <li><a href="ai-log.html">AI Engineering Log</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="about.html">About Me</a></li>
-    </ul>
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">Akhil<span>.</span></a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="journal.html">Weekly Journal</a></li>
+            <li><a href="ai-log.html">AI Engineering Log</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </div>
 </nav>
 
+<!-- Hero Section -->
+<header class="hero-section">
+    <span class="section-label">Developer Portfolio</span>
+    <h1 id="greeting" class="hero-name">Welcome to My Portfolio</h1>
+    <p id="current-date" class="hero-subtitle"></p>
+</header>
+
+<!-- Marquee Banner -->
+<div class="marquee-container">
+    <div class="marquee-content">
+        <div class="marquee-track">
+            <span>Java &bull;</span>
+            <span>Python &bull;</span>
+            <span>JavaScript &bull;</span>
+            <span>HTML5 / CSS3 &bull;</span>
+            <span>Web Development &bull;</span>
+            <span>AI Systems &bull;</span>
+        </div>
+        <div class="marquee-track" aria-hidden="true">
+            <span>Java &bull;</span>
+            <span>Python &bull;</span>
+            <span>JavaScript &bull;</span>
+            <span>HTML5 / CSS3 &bull;</span>
+            <span>Web Development &bull;</span>
+            <span>AI Systems &bull;</span>
+        </div>
+    </div>
+</div>
+
 <main class="container">
-    <header class="hero">
-        <h1 id="greeting">Welcome to My Portfolio</h1>
-        <p id="current-date"></p>
-    </header>
 
-    <section class="card">
-        <h2>About Me</h2>
+    <!-- Scrollytelling Section -->
+    <section class="scrolly-container">
+        
+        <!-- Sticky Visual Slot (Left Side) -->
+        <div class="scrolly-sticky-visual">
+            
+            <!-- Card 1: Headshot -->
+            <div class="visual-card active" id="visual-1" data-step="1">
+                <div class="headshot-wrapper">
+                    <img src="images/akhil.jpg" alt="Akhil Palukuru" class="headshot-mask">
+                </div>
+            </div>
 
-        <div class="profile-image-container">
-            <img src="images/akhil.jpg" alt="Akhil Palukuru" class="profile-pic">
+            <!-- Card 2: Code Preview -->
+            <div class="visual-card" id="visual-2" data-step="2">
+                <div class="code-preview-card">
+                    <div class="card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code>const developer = {
+  name: "Akhil Palukuru",
+  grade: 12,
+  languages: ["Java", "Python", "JavaScript"],
+  status: "Building Portfolio"
+};</code></pre>
+                </div>
+            </div>
+
+            <!-- Card 3: Stats Badge -->
+            <div class="visual-card" id="visual-3" data-step="3">
+                <div class="stats-badge-card">
+                    <span class="badge-number">3+</span>
+                    <span class="badge-text">Languages Mastered</span>
+                </div>
+            </div>
+
         </div>
 
-        <p><strong>Name:</strong> Akhil Palukuru</p>
-        <p><strong>Grade Level:</strong> 12</p>
-        <p><strong>Programming Experience:</strong> I have experience with Java, Python, and JavaScript. I previously learned HTML in Website Development and am refreshing those skills this semester.</p>
-        <p><strong>Why I Enrolled:</strong> I joined this course to prepare for college and expand my knowledge across multiple programming languages.</p>
+        <!-- Scrolling Narrative Content (Right Side) -->
+        <div class="scrolly-content">
+            
+            <div class="scrolly-step" data-step="1">
+                <span class="section-label">01 / Background</span>
+                <h2>About Me</h2>
+                <p><strong>Name:</strong> Akhil Palukuru</p>
+                <p><strong>Grade Level:</strong> 12</p>
+                <p>I am a High School Senior with experience building applications using Java, Python, and JavaScript. I previously learned HTML in Website Development and am actively sharpening my front-end engineering skills this semester.</p>
+            </div>
+
+            <div class="scrolly-step" data-step="2">
+                <span class="section-label">02 / Experience</span>
+                <h2>Technical Foundations</h2>
+                <p>My programming journey spans across core object-oriented languages like Java to dynamic scripting with Python and JavaScript. I enjoy applying programmatic logic to web interfaces and modern UI design.</p>
+            </div>
+
+            <div class="scrolly-step" data-step="3">
+                <span class="section-label">03 / Purpose</span>
+                <h2>Why I Enrolled</h2>
+                <p>I joined this course to prepare for college engineering programs and expand my knowledge across full-stack development technologies.</p>
+            </div>
+
+        </div>
     </section>
 
-    <section class="card">
+    <!-- Bento Grid Section -->
+    <section class="bento-section">
+        <span class="section-label">Highlights</span>
         <h2>Semester Goals</h2>
-        <ol>
-            <li>Master modern HTML, CSS, and JavaScript.</li>
-            <li>Build functional web projects to strengthen my developer portfolio.</li>
-            <li>Earn an A in this course.</li>
-        </ol>
+
+        <div class="bento-grid">
+            <div class="bento-card bento-wide">
+                <div>
+                    <h3>1. Master Modern Web Technologies</h3>
+                    <p>Build a deep, practical understanding of semantic HTML, advanced CSS, modern layout patterns, and responsive design systems.</p>
+                </div>
+                <div>
+                    <span class="tag">HTML &bull; CSS &bull; JS</span>
+                </div>
+            </div>
+
+            <div class="bento-card">
+                <div>
+                    <h3>2. Portfolio Development</h3>
+                    <p>Build clean, functional web applications and projects to strengthen my overall engineering portfolio.</p>
+                </div>
+                <div>
+                    <span class="tag">Projects</span>
+                </div>
+            </div>
+
+            <div class="bento-card">
+                <div>
+                    <h3>3. Academic Excellence</h3>
+                    <p>Maintain consistent high performance and target an A in this engineering course.</p>
+                </div>
+                <div>
+                    <span class="tag">Grade A Target</span>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Statement Banner -->
+    <section class="editorial-statement">
+        <h2>Building toward modern software engineering. <br><span class="muted">Explore my journal and project logs below.</span></h2>
+        <a href="projects.html" class="btn">View My Work</a>
+    </section>
+
 </main>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-links">
+        <a href="https://github.com/AkhilPalukuru" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/akhil-palukuru-94304a396/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:example@email.com">Email</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Akhil Palukuru. All rights reserved.</p>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
