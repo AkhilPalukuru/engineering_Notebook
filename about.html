@@ -6,102 +6,146 @@
     <title>About Me — Akhil Palukuru</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="light-theme">
+<body class="dark-theme">
 
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Navigation Bar -->
 <nav class="navbar">
     <div class="nav-container">
         <a href="index.html" class="nav-logo">Akhil<span>.</span></a>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="journal.html">Journal</a></li>
-            <li><a href="ai-log.html">AI Log</a></li>
-            <li><a href="projects.html">Work</a></li>
-            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="journal.html">Weekly Journal</a></li>
+            <li><a href="ai-log.html">AI Engineering Log</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
         </ul>
     </div>
 </nav>
 
-<main class="container">
-    <header class="hero-section">
-        <h1 class="hero-name">Akhil Palukuru</h1>
-        <p class="hero-subtitle">Student • Developer • Creator</p>
-    </header>
+<!-- Hero Section -->
+<header class="hero-section">
+    <span class="section-label">Biography</span>
+    <h1 class="hero-name">Akhil Palukuru</h1>
+    <p class="hero-subtitle">Student &bull; Developer &bull; Creator</p>
+</header>
 
-    <div class="marquee-container">
-        <div class="marquee-content">
-            <span>Artificial Intelligence</span>
-            <span>Python</span>
-            <span>Java</span>
-            <span>Web Development</span>
-            <span>UI/UX</span>
-            <span>Problem Solving</span>
-            <span>JavaScript</span>
-            <span>Artificial Intelligence</span>
-            <span>Python</span>
-            <span>Java</span>
-            <span>Web Development</span>
-            <span>UI/UX</span>
+<!-- Marquee Banner -->
+<div class="marquee-container">
+    <div class="marquee-content">
+        <div class="marquee-track">
+            <span>Artificial Intelligence &bull;</span>
+            <span>Python &bull;</span>
+            <span>Java &bull;</span>
+            <span>Web Development &bull;</span>
+            <span>UI/UX &bull;</span>
+            <span>Problem Solving &bull;</span>
+            <span>JavaScript &bull;</span>
+        </div>
+        <div class="marquee-track" aria-hidden="true">
+            <span>Artificial Intelligence &bull;</span>
+            <span>Python &bull;</span>
+            <span>Java &bull;</span>
+            <span>Web Development &bull;</span>
+            <span>UI/UX &bull;</span>
+            <span>Problem Solving &bull;</span>
+            <span>JavaScript &bull;</span>
         </div>
     </div>
+</div>
 
+<main class="container">
+
+    <!-- Statement Section -->
     <section class="editorial-statement">
         <h2>Curious by nature. <br><span class="muted">Creative by choice. Always building.</span></h2>
     </section>
 
-    <section class="about-two-column">
-        <div class="about-text">
-            <span class="section-label">ABOUT ME</span>
-            <h2>I like building things that make technology feel simple.</h2>
-            <p>I am a high school senior with experience in Java, Python, and modern web technologies. I enjoy solving complex logic problems and crafting aesthetic digital experiences.</p>
-            <p>My goal is to pursue a degree in computer science while building functional web software and exploring machine learning tools.</p>
-        </div>
-        <div class="about-image">
-            <img src="images/akhil.jpg" alt="Akhil Palukuru" class="headshot-mask">
+    <!-- About Grid Section -->
+    <section class="bento-section">
+        <div class="bento-grid">
+            <div class="bento-card bento-wide">
+                <div>
+                    <span class="section-label">01 / Background</span>
+                    <h2>I like building things that make technology feel simple.</h2>
+                    <p>I am a high school senior with experience in Java, Python, and modern web technologies. I enjoy solving complex logic problems and crafting aesthetic digital experiences.</p>
+                    <p>My goal is to pursue a degree in computer science while building functional web software and exploring machine learning tools.</p>
+                </div>
+            </div>
+
+            <div class="bento-card" style="display: flex; align-items: center; justify-content: center;">
+                <div class="headshot-wrapper">
+                    <img src="images/akhil.jpg" alt="Akhil Palukuru" class="headshot-mask">
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Capabilities Bento Grid -->
     <section class="bento-section">
-        <span class="section-label">CAPABILITIES</span>
+        <span class="section-label">Capabilities</span>
         <h2>Selected Experience & Focus</h2>
 
         <div class="bento-grid">
             <div class="bento-card bento-wide">
-                <h3>Full-Stack Fundamentals</h3>
-                <p>Developing clean software with Java, Python, HTML5, CSS3, and JavaScript while utilizing Git and GitHub for structural version control.</p>
-                <span class="tag">Core Tech</span>
+                <div>
+                    <h3>Full-Stack Fundamentals</h3>
+                    <p>Developing clean software with Java, Python, HTML5, CSS3, and JavaScript while utilizing Git and GitHub for structural version control.</p>
+                </div>
+                <div>
+                    <span class="tag">Core Tech</span>
+                </div>
             </div>
 
             <div class="bento-card">
-                <h3>Education</h3>
-                <p>12th Grade Senior preparing for a college Computer Science program.</p>
-                <span class="tag">Academic</span>
+                <div>
+                    <h3>Education</h3>
+                    <p>12th Grade Senior preparing for a college Computer Science program.</p>
+                </div>
+                <div>
+                    <span class="tag">Academic</span>
+                </div>
             </div>
 
             <div class="bento-card">
-                <h3>Design & UI</h3>
-                <p>Focused on clean, sophisticated layouts, responsive design, and smooth hover interactions.</p>
-                <span class="tag">Frontend</span>
+                <div>
+                    <h3>Design & UI</h3>
+                    <p>Focused on clean, sophisticated layouts, responsive design, and smooth hover interactions.</p>
+                </div>
+                <div>
+                    <span class="tag">Frontend</span>
+                </div>
             </div>
 
             <div class="bento-card bento-wide">
-                <h3>Developer Notebook</h3>
-                <p>A multi-page responsive engineering log created to archive projects, AI prompts, and software progress.</p>
-                <span class="tag">Featured Portfolio</span>
+                <div>
+                    <h3>Developer Notebook</h3>
+                    <p>A multi-page responsive engineering log created to archive projects, AI prompts, and software progress.</p>
+                </div>
+                <div>
+                    <span class="tag">Featured Portfolio</span>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Call to Action Banner -->
     <section class="editorial-statement">
         <h2>Let's build something.</h2>
-        <p>Always open to discussing software projects, collaboration, or new tech ideas.</p>
+        <p class="muted" style="margin-bottom: 20px;">Always open to discussing software projects, collaboration, or new tech ideas.</p>
         <a href="mailto:example@email.com" class="btn">Get in Touch</a>
     </section>
+
 </main>
 
+<!-- Footer Section -->
 <footer class="footer">
     <div class="footer-links">
-        <a href="https://github.com" target="_blank">GitHub</a>
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:example@email.com">Email</a>
     </div>
     <p class="footer-copy">&copy; 2026 Akhil Palukuru. All rights reserved.</p>

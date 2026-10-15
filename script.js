@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 1. Theme Switcher Engine ---
     const savedTheme = localStorage.getItem('theme') || 'dark';
-
     const navContainer = document.querySelector('.nav-container') || document.querySelector('.navbar');
 
     if (navContainer && !document.getElementById('theme-toggle')) {
@@ -41,24 +40,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 2. Date Display ---
-    const currentDateElement = document.getElementById('current-date');
-    if (currentDateElement) {
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        currentDateElement.textContent = new Date().toLocaleDateString(undefined, options);
-    }
-
-    // --- 3. Scroll Progress Indicator ---
+    // --- 2. Scroll Progress Indicator ---
     const progressBar = document.getElementById('scrollProgress');
     window.addEventListener('scroll', () => {
         if (progressBar) {
             const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const progress = (window.scrollY / totalHeight) * 100;
-            progressBar.style.width = `${progress}%`;
+            if (totalHeight > 0) {
+                const progress = (window.scrollY / totalHeight) * 100;
+                progressBar.style.width = `${progress}%`;
+            }
         }
     });
 
-    // --- 4. Scrollytelling Step Sync ---
+    // --- 3. Scrollytelling Step Sync ---
     const steps = document.querySelectorAll('.scrolly-step');
     const visualCards = document.querySelectorAll('.visual-card');
 
@@ -75,8 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     const stepNumber = entry.target.getAttribute('data-step');
                     
                     visualCards.forEach((card, index) => {
-                        const cardStep = card.getAttribute('data-step') || card.id.replace('visual-', '');
-                        if (cardStep == stepNumber || index + 1 == stepNumber) {
+                        const cardStep = card.getAttribute('data-step') || (index + 1);
+                        if (cardStep == stepNumber) {
                             card.classList.add('active');
                         } else {
                             card.classList.remove('active');
@@ -87,5 +81,65 @@ document.addEventListener('DOMContentLoaded', () => {
         }, observerOptions);
 
         steps.forEach(step => observer.observe(step));
+    }
+
+    // --- 4. Projects Filtering Engine ---
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    if (filterButtons.length > 0 && projectCards.length > 0) {
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const categories = card.getAttribute('data-category') || '';
+                    if (filterValue === 'all' || categories.includes(filterValue)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+
+    // --- 5. Interactive Project Modal Engine ---
+    const modal = document.getElementById('project-modal');
+    const openModalButtons = document.querySelectorAll('.open-modal-btn');
+    const closeModalElements = document.querySelectorAll('[data-close]');
+
+    if (modal) {
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const title = button.getAttribute('data-title');
+                const desc = button.getAttribute('data-desc');
+                const learned = button.getAttribute('data-learned');
+                const github = button.getAttribute('data-github');
+
+                const modalTitle = document.getElementById('modal-title');
+                const modalDesc = document.getElementById('modal-desc');
+                const modalLearned = document.getElementById('modal-learned');
+                const githubLink = document.getElementById('modal-github');
+
+                if (modalTitle) modalTitle.textContent = title;
+                if (modalDesc) modalDesc.textContent = desc;
+                if (modalLearned) modalLearned.textContent = learned;
+                if (githubLink) githubLink.setAttribute('href', github || '#');
+
+                modal.style.display = 'flex';
+                modal.setAttribute('aria-hidden', 'false');
+            });
+        });
+
+        closeModalElements.forEach(element => {
+            element.addEventListener('click', () => {
+                modal.style.display = 'none';
+                modal.setAttribute('aria-hidden', 'true');
+            });
+        });
     }
 });

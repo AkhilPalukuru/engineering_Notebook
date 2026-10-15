@@ -6,12 +6,10 @@
     <title>Weekly Journal - Developer Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="light-theme">
+<body class="dark-theme">
 
-<!-- Scroll Progress Bar -->
 <div class="scroll-progress" id="scrollProgress"></div>
 
-<!-- Navigation Bar -->
 <nav class="navbar">
     <div class="nav-container">
         <a href="index.html" class="nav-logo">Akhil<span>.</span></a>
@@ -20,29 +18,37 @@
             <li><a href="journal.html" class="active">Weekly Journal</a></li>
             <li><a href="ai-log.html">AI Engineering Log</a></li>
             <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
             <li><a href="about.html">About Me</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- Hero Section -->
 <header class="hero-section">
     <span class="section-label">Developer Log</span>
     <h1 class="hero-name">Weekly Journal</h1>
     <p class="hero-subtitle">Reflections and progress updates throughout the course</p>
 </header>
 
-<!-- Marquee Banner -->
 <div class="marquee-container">
     <div class="marquee-content">
-        <span>Weekly Updates</span> &bull; <span>Reflections</span> &bull; <span>Engineering Log</span> &bull; <span>Learning Outcomes</span> &bull;
-        <span>Weekly Updates</span> &bull; <span>Reflections</span> &bull; <span>Engineering Log</span> &bull; <span>Learning Outcomes</span> &bull;
+        <div class="marquee-track">
+            <span>Weekly Updates &bull;</span>
+            <span>Reflections &bull;</span>
+            <span>Engineering Log &bull;</span>
+            <span>Learning Outcomes &bull;</span>
+        </div>
+        <div class="marquee-track" aria-hidden="true">
+            <span>Weekly Updates &bull;</span>
+            <span>Reflections &bull;</span>
+            <span>Engineering Log &bull;</span>
+            <span>Learning Outcomes &bull;</span>
+        </div>
     </div>
 </div>
 
 <main class="container">
-    <!-- Journal Entries Section -->
-    <section class="bento-section">
+    <section class="bento-section" style="margin: 0;">
         <div class="bento-grid" style="grid-template-columns: 1fr;">
             
             <article class="bento-card bento-wide">
@@ -77,11 +83,43 @@
                 </div>
             </article>
 
+            <article class="bento-card bento-wide">
+                <span class="section-label">LOG ENTRY #02</span>
+                <h2 style="font-size: 1.5rem; margin-top: 8px; margin-bottom: 4px;">Week 2 Entry</h2>
+                <p style="color: #60A5FA; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px;">Date: Tuesday, September 22, 2026</p>
+                
+                <ul class="styled-list" style="list-style: none; display: flex; flex-direction: column; gap: 14px; padding: 0;">
+                    <li style="border-bottom: 1px solid #1E293B; padding-bottom: 10px;">
+                        <strong style="color: #60A5FA;">Goals:</strong> 
+                        <span>Fix page styling differences, update project buttons with real github links, and create a skills page.</span>
+                    </li>
+                    <li style="border-bottom: 1px solid #1E293B; padding-bottom: 10px;">
+                        <strong style="color: #60A5FA;">Accomplishments:</strong> 
+                        <span>Fixed the JavaScript popup modal buttons, added my actual project repository links, removed the live demo button, and made a new skills page.</span>
+                    </li>
+                    <li style="border-bottom: 1px solid #1E293B; padding-bottom: 10px;">
+                        <strong style="color: #60A5FA;">Biggest Challenge:</strong> 
+                        <span>Figuring out why the popup modal button was not opening when clicked.</span>
+                    </li>
+                    <li style="border-bottom: 1px solid #1E293B; padding-bottom: 10px;">
+                        <strong style="color: #60A5FA;">What I Learned:</strong> 
+                        <span>I learned how JavaScript connects data attributes to dynamic popups and how to keep my HTML layout clean across all pages.</span>
+                    </li>
+                    <li style="padding-bottom: 4px;">
+                        <strong style="color: #60A5FA;">Goals for Next Week:</strong> 
+                        <span>Test my portfolio with another classmate, make improvements based on feedback, and publish it to GitHub Pages.</span>
+                    </li>
+                </ul>
+
+                <div style="margin-top: 20px;">
+                    <span class="tag">Week 02</span>
+                </div>
+            </article>
+
         </div>
     </section>
 </main>
 
-<!-- Footer Section -->
 <footer class="footer">
     <div class="footer-links">
         <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>

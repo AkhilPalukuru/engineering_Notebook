@@ -6,7 +6,7 @@
   <title>Projects | Developer Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="light-theme">
+<body class="dark-theme">
 
   <!-- Scroll Progress Bar -->
   <div class="scroll-progress" id="scrollProgress"></div>
@@ -17,10 +17,11 @@
       <a href="index.html" class="nav-logo">Akhil<span>.</span></a>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="journal.html">Journal</a></li>
-        <li><a href="ai-log.html">AI Log</a></li>
-        <li><a href="projects.html" class="active">Work</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="journal.html">Weekly Journal</a></li>
+        <li><a href="ai-log.html">AI Engineering Log</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="about.html">About Me</a></li>
       </ul>
     </div>
   </nav>
@@ -35,8 +36,22 @@
   <!-- Marquee Banner -->
   <div class="marquee-container">
     <div class="marquee-content">
-      <span>JavaScript</span> &bull; <span>Java</span> &bull; <span>Web Development</span> &bull; <span>REST APIs</span> &bull; <span>OOP</span> &bull; <span>HTML5 / CSS3</span> &bull;
-      <span>JavaScript</span> &bull; <span>Java</span> &bull; <span>Web Development</span> &bull; <span>REST APIs</span> &bull; <span>OOP</span> &bull; <span>HTML5 / CSS3</span> &bull;
+      <div class="marquee-track">
+        <span>JavaScript &bull;</span>
+        <span>Java &bull;</span>
+        <span>Web Development &bull;</span>
+        <span>REST APIs &bull;</span>
+        <span>OOP &bull;</span>
+        <span>HTML5 / CSS3 &bull;</span>
+      </div>
+      <div class="marquee-track" aria-hidden="true">
+        <span>JavaScript &bull;</span>
+        <span>Java &bull;</span>
+        <span>Web Development &bull;</span>
+        <span>REST APIs &bull;</span>
+        <span>OOP &bull;</span>
+        <span>HTML5 / CSS3 &bull;</span>
+      </div>
     </div>
   </div>
 
@@ -57,7 +72,7 @@
         <!-- Project 1 -->
         <article class="project-card bento-card bento-wide" data-category="javascript web">
           <div class="card-content">
-            <h3>Interactive Task Tracker</h3>
+            <h3>FRC Robotics</h3>
             <p class="project-desc">A browser-based task management web app with local storage persistence.</p>
             <div class="tech-tags" style="margin-top: 12px; margin-bottom: 16px;">
               <span class="tag">JavaScript</span>
@@ -65,11 +80,10 @@
               <span class="tag">CSS3</span>
             </div>
             <button class="btn btn-secondary open-modal-btn" 
-                    data-title="Interactive Task Tracker"
+                    data-title="FRC Robotics"
                     data-desc="A dynamic application designed to manage daily tasks, complete with drag-and-drop capability and custom category filtering."
                     data-learned="Learned state management using browser localStorage, event delegation, and accessible DOM manipulation."
-                    data-github="https://github.com"
-                    data-live="https://example.com">
+                    data-github="https://github.com/FRC5010/FRC5010Example">
               Learn More
             </button>
           </div>
@@ -78,18 +92,17 @@
         <!-- Project 2 -->
         <article class="project-card bento-card" data-category="java other">
           <div class="card-content">
-            <h3>Student Record Management System</h3>
+            <h3>Website Development Final Project First Semester</h3>
             <p class="project-desc">A Java console and object-oriented application to handle student database records.</p>
             <div class="tech-tags" style="margin-top: 12px; margin-bottom: 16px;">
               <span class="tag">Java</span>
               <span class="tag">OOP</span>
             </div>
             <button class="btn btn-secondary open-modal-btn" 
-                    data-title="Student Record Management System"
+                    data-title="Website Development Final Project First Semester"
                     data-desc="Command-line application that allows administrators to add, update, search, and delete student data."
                     data-learned="Deepened understanding of Java Collections, Object-Oriented Design Principles (OOP), and file I/O handling."
-                    data-github="https://github.com"
-                    data-live="#">
+                    data-github="https://github.com/AkhilPalukuru/Final-Project-Sem-1">
               Learn More
             </button>
           </div>
@@ -98,7 +111,7 @@
         <!-- Project 3 -->
         <article class="project-card bento-card" data-category="javascript web">
           <div class="card-content">
-            <h3>Weather Dashboard</h3>
+            <h3>Project 2</h3>
             <p class="project-desc">Real-time weather application fetching data via public REST APIs.</p>
             <div class="tech-tags" style="margin-top: 12px; margin-bottom: 16px;">
               <span class="tag">JavaScript</span>
@@ -106,11 +119,10 @@
               <span class="tag">Web</span>
             </div>
             <button class="btn btn-secondary open-modal-btn" 
-                    data-title="Weather Dashboard"
+                    data-title="Project 2"
                     data-desc="Fetches global weather forecasts using asynchronous JavaScript requests to OpenWeatherMap API."
                     data-learned="Mastered JavaScript Fetch API, Async/Await asynchronous handling, and JSON parsing."
-                    data-github="https://github.com"
-                    data-live="https://example.com">
+                    data-github="https://github.com/AkhilPalukuru/Project2">
               Learn More
             </button>
           </div>
@@ -133,7 +145,6 @@
       </div>
       <div class="modal-links" style="display: flex; gap: 12px; margin-top: 10px;">
         <a id="modal-github" href="#" target="_blank" class="btn">GitHub Code</a>
-        <a id="modal-live" href="#" target="_blank" class="btn btn-secondary">Live Demo</a>
       </div>
     </div>
   </div>
@@ -145,7 +156,7 @@
       <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:example@email.com">Email</a>
     </div>
-    <p class="footer-copy">&copy; 2026 Akhil. Built for Portfolio 2.0.</p>
+    <p class="footer-copy">&copy; 2026 Akhil Palukuru. All rights reserved.</p>
   </footer>
 
   <script src="js/script.js"></script>

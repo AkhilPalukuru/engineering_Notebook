@@ -1,183 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio - Home</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akhil Palukuru — Developer Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="dark-theme">
 
-<!-- Scroll Progress Bar -->
-<div class="scroll-progress" id="scrollProgress"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
 
-<!-- Navigation Bar -->
-<nav class="navbar">
+  <nav class="navbar">
     <div class="nav-container">
-        <a href="index.html" class="nav-logo">Akhil<span>.</span></a>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="journal.html">Weekly Journal</a></li>
-            <li><a href="ai-log.html">AI Engineering Log</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About Me</a></li>
-        </ul>
+      <a href="index.html" class="nav-logo">Akhil<span>.</span></a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="journal.html">Weekly Journal</a></li>
+        <li><a href="ai-log.html">AI Engineering Log</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
     </div>
-</nav>
+  </nav>
 
-<!-- Hero Section -->
-<header class="hero-section">
-    <span class="section-label">Developer Portfolio</span>
-    <h1 id="greeting" class="hero-name">Welcome to My Portfolio</h1>
-    <p id="current-date" class="hero-subtitle"></p>
-</header>
+  <header class="hero-section">
+    <span class="section-label">Software Developer</span>
+    <h1 class="hero-name">Akhil Palukuru</h1>
+    <p class="hero-subtitle">Building software, interactive web experiences, and exploring intelligent systems.</p>
+  </header>
 
-<!-- Marquee Banner -->
-<div class="marquee-container">
+  <div class="marquee-container">
     <div class="marquee-content">
-        <div class="marquee-track">
-            <span>Java &bull;</span>
-            <span>Python &bull;</span>
-            <span>JavaScript &bull;</span>
-            <span>HTML5 / CSS3 &bull;</span>
-            <span>Web Development &bull;</span>
-            <span>AI Systems &bull;</span>
-        </div>
-        <div class="marquee-track" aria-hidden="true">
-            <span>Java &bull;</span>
-            <span>Python &bull;</span>
-            <span>JavaScript &bull;</span>
-            <span>HTML5 / CSS3 &bull;</span>
-            <span>Web Development &bull;</span>
-            <span>AI Systems &bull;</span>
-        </div>
+      <div class="marquee-track">
+        <span>Java &bull;</span>
+        <span>Python &bull;</span>
+        <span>JavaScript &bull;</span>
+        <span>Web Development &bull;</span>
+        <span>UI/UX Design &bull;</span>
+        <span>Robotics &bull;</span>
+      </div>
+      <div class="marquee-track" aria-hidden="true">
+        <span>Java &bull;</span>
+        <span>Python &bull;</span>
+        <span>JavaScript &bull;</span>
+        <span>Web Development &bull;</span>
+        <span>UI/UX Design &bull;</span>
+        <span>Robotics &bull;</span>
+      </div>
     </div>
-</div>
+  </div>
 
-<main class="container">
-
+  <main class="container">
+    
     <!-- Scrollytelling Section -->
     <section class="scrolly-container">
+      <div class="scrolly-sticky-visual">
         
-        <!-- Sticky Visual Slot (Left Side) -->
-        <div class="scrolly-sticky-visual">
-            
-            <!-- Card 1: Headshot -->
-            <div class="visual-card active" id="visual-1" data-step="1">
-                <div class="headshot-wrapper">
-                    <img src="images/akhil.jpg" alt="Akhil Palukuru" class="headshot-mask">
-                </div>
-            </div>
+        <div class="visual-card active" data-step="1">
+          <div class="headshot-wrapper">
+            <img src="images/akhil.jpg" alt="Akhil Palukuru" class="headshot-mask">
+          </div>
+        </div>
 
-            <!-- Card 2: Code Preview -->
-            <div class="visual-card" id="visual-2" data-step="2">
-                <div class="code-preview-card">
-                    <div class="card-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <pre><code>const developer = {
-  name: "Akhil Palukuru",
-  grade: 12,
-  languages: ["Java", "Python", "JavaScript"],
-  status: "Building Portfolio"
+        <div class="visual-card" data-step="2">
+          <div class="code-preview-card">
+            <div class="card-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <pre><code>const portfolio = {
+  version: "2.0",
+  developer: "Akhil",
+  status: "Deployed"
 };</code></pre>
-                </div>
-            </div>
-
-            <!-- Card 3: Stats Badge -->
-            <div class="visual-card" id="visual-3" data-step="3">
-                <div class="stats-badge-card">
-                    <span class="badge-number">3+</span>
-                    <span class="badge-text">Languages Mastered</span>
-                </div>
-            </div>
-
+          </div>
         </div>
 
-        <!-- Scrolling Narrative Content (Right Side) -->
-        <div class="scrolly-content">
-            
-            <div class="scrolly-step" data-step="1">
-                <span class="section-label">01 / Background</span>
-                <h2>About Me</h2>
-                <p><strong>Name:</strong> Akhil Palukuru</p>
-                <p><strong>Grade Level:</strong> 12</p>
-                <p>I am a High School Senior with experience building applications using Java, Python, and JavaScript. I previously learned HTML in Website Development and am actively sharpening my front-end engineering skills this semester.</p>
-            </div>
-
-            <div class="scrolly-step" data-step="2">
-                <span class="section-label">02 / Experience</span>
-                <h2>Technical Foundations</h2>
-                <p>My programming journey spans across core object-oriented languages like Java to dynamic scripting with Python and JavaScript. I enjoy applying programmatic logic to web interfaces and modern UI design.</p>
-            </div>
-
-            <div class="scrolly-step" data-step="3">
-                <span class="section-label">03 / Purpose</span>
-                <h2>Why I Enrolled</h2>
-                <p>I joined this course to prepare for college engineering programs and expand my knowledge across full-stack development technologies.</p>
-            </div>
-
+        <div class="visual-card" data-step="3">
+          <div class="stats-badge-card">
+            <span class="badge-number">100%</span>
+            <span class="badge-text">Responsive & Modular</span>
+          </div>
         </div>
+
+      </div>
+
+      <div class="scrolly-content">
+        <div class="scrolly-step" data-step="1">
+          <span class="section-label">01 / WHO I AM</span>
+          <h2>Passionate about code and creation.</h2>
+          <p>High school senior and software developer focused on building clean, responsive web applications and backend logic.</p>
+        </div>
+
+        <div class="scrolly-step" data-step="2">
+          <span class="section-label">02 / HOW I BUILD</span>
+          <h2>Modern tech stack & clean architecture.</h2>
+          <p>Utilizing JavaScript, Java, Python, and modular CSS to craft reliable digital solutions with seamless user experiences.</p>
+        </div>
+
+        <div class="scrolly-step" data-step="3">
+          <span class="section-label">03 / PERFORMANCE</span>
+          <h2>Optimized for every device.</h2>
+          <p>Every page features persistent light/dark themes, instant category filtering, and smooth interactive navigation.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Bento Grid Section -->
+    <!-- Featured Work Bento Section -->
     <section class="bento-section">
-        <span class="section-label">Highlights</span>
-        <h2>Semester Goals</h2>
+      <span class="section-label">HIGHLIGHTS</span>
+      <h2 style="font-size: 1.8rem; margin-top: 8px; margin-bottom: 24px;">Featured Overview</h2>
 
-        <div class="bento-grid">
-            <div class="bento-card bento-wide">
-                <div>
-                    <h3>1. Master Modern Web Technologies</h3>
-                    <p>Build a deep, practical understanding of semantic HTML, advanced CSS, modern layout patterns, and responsive design systems.</p>
-                </div>
-                <div>
-                    <span class="tag">HTML &bull; CSS &bull; JS</span>
-                </div>
-            </div>
-
-            <div class="bento-card">
-                <div>
-                    <h3>2. Portfolio Development</h3>
-                    <p>Build clean, functional web applications and projects to strengthen my overall engineering portfolio.</p>
-                </div>
-                <div>
-                    <span class="tag">Projects</span>
-                </div>
-            </div>
-
-            <div class="bento-card">
-                <div>
-                    <h3>3. Academic Excellence</h3>
-                    <p>Maintain consistent high performance and target an A in this engineering course.</p>
-                </div>
-                <div>
-                    <span class="tag">Grade A Target</span>
-                </div>
-            </div>
+      <div class="bento-grid">
+        <div class="bento-card bento-wide">
+          <div>
+            <h3>Interactive Developer Portfolio 2.0</h3>
+            <p>A multi-page responsive web platform designed with dark mode persistence, dynamic category filtering, and modal project viewers.</p>
+          </div>
+          <div>
+            <a href="projects.html" class="btn">View All Projects</a>
+          </div>
         </div>
+
+        <div class="bento-card">
+          <div>
+            <h3>Technical Skills</h3>
+            <p>Proficient in Java, Python, JavaScript, and web technologies with a focus on clean software architecture.</p>
+          </div>
+          <div>
+            <a href="skills.html" class="tag">Explore Skills</a>
+          </div>
+        </div>
+
+        <div class="bento-card">
+          <div>
+            <h3>Engineering Log</h3>
+            <p>Documenting AI collaborations, prompts, and problem-solving strategies throughout project cycles.</p>
+          </div>
+          <div>
+            <a href="ai-log.html" class="tag">Read Log</a>
+          </div>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Statement Banner -->
-    <section class="editorial-statement">
-        <h2>Building toward modern software engineering. <br><span class="muted">Explore my journal and project logs below.</span></h2>
-        <a href="projects.html" class="btn">View My Work</a>
-    </section>
-
-</main>
-
-<!-- Footer Section -->
-<footer class="footer">
+  <footer class="footer">
     <div class="footer-links">
-        <a href="https://github.com/AkhilPalukuru" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/akhil-palukuru-94304a396/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:example@email.com">Email</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:example@email.com">Email</a>
     </div>
     <p class="footer-copy">&copy; 2026 Akhil Palukuru. All rights reserved.</p>
-</footer>
+  </footer>
 
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
