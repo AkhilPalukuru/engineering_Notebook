@@ -8,6 +8,21 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Theme color variables (used by inline styles in the HTML too) */
+:root {
+    --accent: #60A5FA;
+    --border: #1E293B;
+    --card: #131C2E;
+    --muted: #94A3B8;
+}
+html.light-theme,
+body.light-theme {
+    --accent: #2563EB;
+    --border: #E2E8F0;
+    --card: #FFFFFF;
+    --muted: #475569;
+}
+
 /* ======================================================
    THEME VARIABLES & BASE STYLES
    ====================================================== */
@@ -584,3 +599,13 @@ body.light-theme .footer-links a {
     .bento-wide { grid-column: span 1; }
     .navbar ul { gap: 14px; }
 }
+
+/* Filter buttons, secondary buttons, modal */
+button.btn { border: none; cursor: pointer; font-family: inherit; }
+.filter-btn { background: var(--card); color: var(--muted); border: 1px solid var(--border); }
+.filter-btn:hover { background: var(--card); border-color: #2563EB; }
+.filter-btn.active { background: #2563EB; color: #FFFFFF; border-color: #2563EB; }
+.btn-secondary { background: transparent; color: var(--accent); border: 1px solid #2563EB; }
+.btn-secondary:hover { background: #2563EB; color: #FFFFFF; }
+.modal-container { max-height: 90vh; overflow-y: auto; }
+.modal-container:hover { transform: none; }
